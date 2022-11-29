@@ -1,0 +1,66 @@
+.wrapper {
+  position: relative;
+}
+
+h2 {
+  position: relative;
+  font-weight: 800;
+  font-size: 6.4rem;
+  line-height: 1.1;
+  text-align: center;
+  z-index: 1;
+}
+
+.cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
+  gap: 5rem;
+  justify-content: space-between;
+  margin-block: 8rem;
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+h3 {
+  width: 70px;
+  height: 70px;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 3.4rem;
+  line-height: 1.2;
+  border: 5px solid #d7ff00;
+  border-radius: 50%;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 3.4rem;
+  line-height: 1.2;
+}
+
+p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.background {
+  position: absolute;
+  width: 970px;
+  height: 970px;
+  left: 467px;
+  top: -156px;
+
+  background: #631079;
+  opacity: 0.6;
+  filter: blur(350px);
+}

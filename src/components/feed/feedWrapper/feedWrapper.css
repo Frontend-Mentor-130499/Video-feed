@@ -1,0 +1,50 @@
+.btnContainer {
+  top: 52px;
+  gap: 24px;
+  width: 100%;
+  padding: 0 16px;
+  z-index: 10;
+}
+
+.topBar {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  width: 100%;
+  padding: 55px 20px;
+}
+
+.leftBtnContainer {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.progress {
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  padding: 0 16px;
+}
+
+.bottomBtn {
+  margin-bottom: 16px;
+}
+
+.interact {
+  display: flex;
+  position: absolute;
+  width: fit-content;
+  flex-direction: column;
+  gap: 16px;
+  top: -150px;
+  right: 16px;
+  z-index: 10;
+}
+
+.icon {
+  cursor: pointer;
+  width: 24px;
+}

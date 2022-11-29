@@ -1,0 +1,69 @@
+.toolbarWrapper {
+  position: absolute;
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0) 15%,
+    rgba(0, 0, 0, 0) 65%,
+    rgba(0, 0, 0, 0.3) 75%,
+    rgba(0, 0, 0, 0.5) 85%,
+    rgba(0, 0, 0, 0.7) 91%
+  );
+  border-radius: 56px;
+  left: 16px;
+  bottom: 110px;
+}
+
+.detailsWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(7.5px);
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  width: 255px;
+}
+
+.detailsImage {
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  color: var(--white);
+}
+
+.priceSection {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.discountedPrice {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--white);
+  opacity: 0.9;
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--white);
+  opacity: 0.4;
+  text-decoration: line-through;
+}

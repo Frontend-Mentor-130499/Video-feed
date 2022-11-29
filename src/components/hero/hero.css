@@ -1,0 +1,180 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 180px;
+}
+
+.leftSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  translate: 0 -35%;
+  z-index: 1;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 7.6rem;
+  line-height: 110%;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.primary {
+  appearance: none;
+  border: none;
+  background-color: #bb00ed;
+  width: fit-content;
+  padding: 1.6rem 2.4rem;
+  border-radius: 100vmax;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+.primary:focus,
+.primary:active {
+  outline: none;
+}
+
+.rightSection {
+  position: relative;
+  width: 100%;
+  translate: 0 15%;
+  z-index: 1;
+}
+
+.videoWrapper {
+  position: relative;
+  z-index: 2;
+  width: 342px;
+  height: 623.8px;
+  box-shadow: 33.8555px 55.0152px 92.8926px rgba(0, 0, 0, 0.34),
+    21.9434px 35.658px 54.4024px rgba(0, 0, 0, 0.258148),
+    13.0406px 21.191px 29.588px rgba(0, 0, 0, 0.206519),
+    6.7711px 11.003px 15.095px rgba(0, 0, 0, 0.17),
+    2.7586px 4.48272px 7.56902px rgba(0, 0, 0, 0.133481),
+    0.626954px 1.0188px 3.65549px rgba(0, 0, 0, 0.0818519);
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.glow {
+  position: absolute;
+  left: -25px;
+  top: -25px;
+}
+
+.backWrapper {
+  position: absolute;
+  top: -10%;
+  left: 20%;
+  width: 509px;
+  height: 405px;
+}
+
+.backImage {
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.glow-orange {
+  position: absolute;
+  left: -25px;
+  top: -25px;
+}
+
+.stats {
+  position: absolute;
+  bottom: 10rem;
+  left: 16rem;
+  z-index: 1;
+}
+
+.conversion {
+  position: relative;
+  width: 195px;
+}
+
+.pinkEllipse {
+  width: 200%;
+  position: absolute;
+  left: -60%;
+  top: -50%;
+}
+
+.audience {
+  position: relative;
+  width: 195px;
+  left: 28rem;
+  bottom: 17rem;
+}
+
+.blueEllipse {
+  width: 200%;
+  position: absolute;
+  left: -60%;
+  top: -50%;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 130%;
+}
+
+.number {
+  font-weight: 900;
+  font-size: 5.2rem;
+  line-height: 110%;
+}
+
+.pinkgradient {
+  width: 1033.79px;
+  height: 401.06px;
+  position: absolute;
+  left: -270px;
+  top: 260px;
+  background: #fb5afb;
+  filter: blur(400px);
+  border-radius: 310px;
+  transform: rotate(32.89deg);
+}
+
+.bluegradient {
+  position: absolute;
+  width: 1438.15px;
+  height: 586px;
+  left: 390.39px;
+  top: 172px;
+  background: #00b2ff;
+  filter: blur(350px);
+  border-radius: 310px;
+  transform: rotate(-27.79deg);
+}

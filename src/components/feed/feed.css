@@ -1,0 +1,70 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 3.2rem;
+  align-items: center;
+  margin-block: 10rem;
+}
+
+.leftSection {
+  position: relative;
+  max-width: 655px;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  z-index: 1;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 6.4rem;
+  line-height: 1.1;
+}
+
+p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.tabbedSection {
+  padding-block-end: 1.6rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.tab {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  text-align: start;
+  cursor: pointer;
+}
+
+.tab.current {
+  color: #d7ff00;
+}
+
+.underglow {
+  position: absolute;
+  height: 2px;
+  width: 200px;
+  left: 0;
+  bottom: 0;
+  background: #d7ff00;
+  box-shadow: 0 0 9px 5px #d7ff00;
+  transition: all 0.3s ease-in-out;
+}
+
+.videoSection {
+  position: relative;
+}
+
+.outline {
+  position: absolute;
+  left: -31px;
+  top: -33px;
+}

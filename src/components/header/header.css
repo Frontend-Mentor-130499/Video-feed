@@ -1,0 +1,77 @@
+nav {
+  --gap: 5rem;
+
+  padding-block: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+.firstSection {
+  display: flex;
+  gap: var(--gap);
+  align-items: center;
+}
+
+.logo {
+  width: 90px;
+}
+
+.options {
+  display: flex;
+  gap: var(--gap);
+  justify-content: space-between;
+}
+
+.linkWrapper {
+  width: 150px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.ellipse {
+  display: none;
+
+  position: absolute;
+  left: -25px;
+  top: -50px;
+
+  width: 200px;
+}
+
+.ellipse.show {
+  display: flex;
+}
+
+.link {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.link.absolute {
+  position: absolute;
+}
+
+.primary {
+  appearance: none;
+  border: none;
+  background-color: #bb00ed;
+  padding: 1.6rem 2.4rem;
+  border-radius: 100vmax;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+.primary:focus,
+.primary:active {
+  outline: none;
+}
