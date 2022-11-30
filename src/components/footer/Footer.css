@@ -11,6 +11,16 @@
   justify-content: space-between;
   background: #000;
 }
+.flair {
+  width: 100vw;
+  position: absolute;
+  left: -7.5vw;
+  top: 0;
+}
+
+.flair > svg {
+  display: inline-block;
+}
 
 .leftSection {
   display: flex;
