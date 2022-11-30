@@ -35,6 +35,7 @@
   height: 702px;
   border-radius: 8px;
   overflow: hidden;
+  z-index: 0;
 }
 
 .imageWrapper {

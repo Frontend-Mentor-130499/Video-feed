@@ -10,7 +10,6 @@ const LazyImage = () => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
           const image = entry.target as HTMLImageElement;
-          console.log(image);
           image.src = image.dataset.src as string;
           image.classList.remove('lazy-load-img');
         });

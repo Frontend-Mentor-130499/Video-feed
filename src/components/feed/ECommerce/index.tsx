@@ -9,6 +9,7 @@ import {
   $,
   useContextProvider,
   createContext,
+  useClientEffect$,
 } from '@builder.io/qwik';
 import { FeedContext, StateType } from '..';
 import Toolbar from './toolbar';
@@ -58,8 +59,13 @@ const ECommerce = component$<PageProps>(({ videoRef }) => {
     proceed: false,
   }) as VideoStateTypes;
 
-  console.log(state);
-  console.log(store);
+  useClientEffect$(() => {
+    videoRef.value.addEventListener('timeupdate', () => {
+      const decimal = videoRef.value.currentTime / videoRef.value.duration;
+      const time = decimal * 100;
+      store.videoCurrentProgress = time;
+    });
+  });
 
   useContextProvider(VideoContext, state);
 

@@ -6,8 +6,11 @@
 }
 
 .done {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 4px;
-  background: var(--white);
+  background: #fff;
   border-radius: 4px;
   width: 0px;
   transition: all 0.4s linear;

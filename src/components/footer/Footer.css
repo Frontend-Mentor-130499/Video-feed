@@ -1,0 +1,57 @@
+.wrapper {
+  box-sizing: content-box;
+  width: 85%;
+  height: 225px;
+  margin-inline: auto;
+  margin-top: 10rem;
+  padding-block: 8rem 4.5rem;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  background: #000;
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.leftSection img {
+  width: 298px;
+  height: 166px;
+}
+
+.leftSection p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+
+  color: #ffffff;
+
+  opacity: 0.5;
+}
+
+.rightSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.links {
+  display: flex;
+  gap: 5rem;
+}
+
+.links a {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}

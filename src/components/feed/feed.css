@@ -1,9 +1,22 @@
 .wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   gap: 3.2rem;
   align-items: center;
   margin-block: 10rem;
+}
+
+.yellowGlow {
+  position: absolute;
+  width: 970px;
+  height: 970px;
+  left: 467px;
+
+  background: #323908;
+  opacity: 0.8;
+  filter: blur(350px);
+  transform: rotate(-90deg);
 }
 
 .leftSection {
@@ -61,6 +74,12 @@ p {
 
 .videoSection {
   position: relative;
+  box-shadow: 56.6115px 91.9937px 155.33px rgba(0, 0, 0, 0.34),
+    36.6926px 59.6255px 90.969px rgba(0, 0, 0, 0.258148),
+    21.8059px 35.4346px 49.4756px rgba(0, 0, 0, 0.206519),
+    11.3223px 18.3987px 25.2412px rgba(0, 0, 0, 0.17),
+    4.61279px 7.49578px 12.6566px rgba(0, 0, 0, 0.133481),
+    1.04836px 1.70359px 6.11254px rgba(0, 0, 0, 0.0818519);
 }
 
 .outline {

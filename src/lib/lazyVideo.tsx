@@ -10,7 +10,6 @@ const LazyVideo = () => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
           const video = entry.target as HTMLVideoElement;
-          console.log(video);
           // video.poster = video.dataset.poster;
           Array.from(video.getElementsByTagName('source')).forEach((source) => {
             source.src = source.dataset.src as string;

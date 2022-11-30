@@ -20,8 +20,6 @@ const Toolbar = component$<PageProps>(({ info, videoRef }) => {
   const feedStore = useContext(FeedContext) as StateType;
   const videoStore = useContext(VideoContext) as VideoStateTypes;
 
-  console.log(videoStore);
-
   return (
     <>
       <div className='toolbarWrapper'>

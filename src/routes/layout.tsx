@@ -10,6 +10,7 @@ import styles from './layout.css?inline';
 
 import slickStyles from 'slick-carousel/slick/slick.css?inline';
 import themeStyles from 'slick-carousel/slick/slick-theme.css?inline';
+import Footer from '~/components/footer';
 
 export default component$(() => {
   useStylesScoped$(styles);
@@ -24,6 +25,7 @@ export default component$(() => {
           <Slot />
         </section>
       </main>
+      <Footer />
     </>
   );
 });

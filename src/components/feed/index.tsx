@@ -46,7 +46,7 @@ const Feed = component$(() => {
     current: 0,
     videoCurrentProgress: 0,
     isGetInTouchActive: false,
-    isPlaying: false,
+    isPlaying: true,
     isMuted: true,
     videoCurrentProgressFS: 0,
     isGetInTouchActiveFS: false,
@@ -95,24 +95,9 @@ const Feed = component$(() => {
     }
   });
 
-  useClientEffect$(({ track }) => {
-    const category = track(() => state.current);
-
-    video.value.addEventListener('timeupdate', () => {
-      const decimal = video.value.currentTime / video.value.duration;
-      const time = decimal * 100;
-      state.videoCurrentProgress = time;
-    });
-
-    videoFS.value.addEventListener('timeupdate', () => {
-      const decimal = videoFS.value.currentTime / videoFS.value.duration;
-      const time = decimal * 100;
-      state.videoCurrentProgress = time;
-    });
-  });
-
   return (
     <div class='wrapper'>
+      <div className='yellowGlow'></div>
       <div className='leftSection'>
         <h2>Feed application for industries</h2>
         <p>
@@ -143,8 +128,8 @@ const Feed = component$(() => {
       </div>
       <div className='videoSection'>
         <img
-          className={`outline lazy-load-img`}
-          data-src='https://rtalk.tv/website/pudina/fvglow.png'
+          className='outline'
+          src='https://rtalk.tv/website/pudina/fvglow.png'
           alt='outline'
         />
         <FeedWrapper videoRef={video} label={cats[state.current].btnText}>
